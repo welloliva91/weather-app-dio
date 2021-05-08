@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
@@ -11,6 +12,7 @@ import { HomeModule } from './pages/home/home.module';
 import { BookmarksModule } from './pages/bookmarks/bookmarks.module';
 import { environment } from '../environments/environment';
 
+
 @NgModule({
   declarations: [
     AppComponent
@@ -18,6 +20,7 @@ import { environment } from '../environments/environment';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     HomeModule,
     BookmarksModule,
     StoreModule.forRoot({}),

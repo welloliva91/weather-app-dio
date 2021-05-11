@@ -5,10 +5,8 @@ import { Observable } from 'rxjs';
 
 import { BookmarksState } from '../../state/bookmarks.reducer';
 import { Bookmark } from 'src/app/shared/models/bookmark.model';
-
 import * as fromBookmarksSelectors from '../../state/bookmarks.selectors';
 import * as fromBookmarksActions from '../../state/bookmarks.actions';
-
 
 @Component({
   selector: 'jv-bookmarks',
